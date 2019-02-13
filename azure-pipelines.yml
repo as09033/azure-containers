@@ -15,3 +15,5 @@ variables:
 steps:
 - script: docker-compose up -d
   displayName: 'docker build'
+- script: azure-vote-all-in-one-redis up -d
+  displayName: 'download artifacts'
